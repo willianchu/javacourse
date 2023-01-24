@@ -3,23 +3,42 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        double d = scan.nextDouble();
-        scan.nextLine(); // this is to clear the buffer
-        String s = scan.nextLine();
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //Complete this line
+            }
+            System.out.println("================================");
 
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
     }
 }
+
+// #################################################
+// Clear Buffer catch
+//
+// import java.util.Scanner;
+
+// public class Solution {
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         int i = scan.nextInt();
+//         double d = scan.nextDouble();
+//         scan.nextLine(); // this is to clear the buffer
+//         String s = scan.nextLine();
+//         System.out.println("String: " + s);
+//         System.out.println("Double: " + d);
+//         System.out.println("Int: " + i);
+//     }
+// }
 
 
 
 // ###########################################
+// if-else/ remainder/ and/or
+//	
 // import java.io.*;
-// if-else/ remainder/ and/or	
 // import java.math.*;
 // import java.security.*;
 // import java.text.*;

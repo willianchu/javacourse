@@ -7,16 +7,20 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
+// #####################################################
+// Loops and Format output 
 
-public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+// public class Solution {
+//     public static void main(String[] args) throws IOException {
+//         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in)); // read input from STDIN
 
-        int N = Integer.parseInt(bufferedReader.readLine().trim());
-
-        bufferedReader.close();
-    }
-}
+//         int N = Integer.parseInt(bufferedReader.readLine().trim()); // trim() removes leading and trailing whitespace
+//         bufferedReader.close(); // close the buffer
+//         for(int i=1; i<=10; i++){
+//             System.out.format("%d x %d = %d%n", N, i, N*i);
+//         }
+//     }
+// }
 
 
 // #################################################### 

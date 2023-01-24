@@ -1,19 +1,44 @@
-import java.util.Scanner;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
 
 public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) {
-            Scanner sc=new Scanner(System.in);
-            System.out.println("================================");
-            for(int i=0;i<3;i++){
-                String s1=sc.next();
-                int x=sc.nextInt();
-                //Complete this line
-            }
-            System.out.println("================================");
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
 
+        bufferedReader.close();
     }
 }
+
+
+// #################################################### 
+// formating output
+
+// import java.util.Scanner;
+
+// public class Solution {
+
+//     public static void main(String[] args) {
+//             Scanner sc=new Scanner(System.in);
+//             System.out.println("================================");
+//             for(int i=0;i<3;i++){
+//                 String s1=sc.next();
+//                 int x=sc.nextInt();
+//                 System.out.format("%-15s%03d%n", s1, x); 
+//                 // %s is for string, %d is for integer, %n is for new line	
+//             }
+//             System.out.println("================================");
+
+//     }
+// }
 
 // #################################################
 // Clear Buffer catch

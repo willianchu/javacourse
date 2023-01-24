@@ -1,32 +1,53 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
 
-
-
-    private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
-        int N = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        scan.nextLine(); // this is to clear the buffer
+        String s = scan.nextLine();
 
-        scanner.close();
-        
-        if(N%2>0 || (N<=20 && N>=6)){
-            System.out.println("Weird");
-        } else {
-            System.out.println("Not Weird");
-        }
-        
-        
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
     }
 }
+
+
+
+// ###########################################
+// import java.io.*;
+// if-else/ remainder/ and/or	
+// import java.math.*;
+// import java.security.*;
+// import java.text.*;
+// import java.util.*;
+// import java.util.concurrent.*;
+// import java.util.regex.*;
+
+// public class Solution {
+
+
+
+//     private static final Scanner scanner = new Scanner(System.in);
+
+//     public static void main(String[] args) {
+//         int N = scanner.nextInt();
+//         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+//         scanner.close();
+        
+//         if(N%2>0 || (N<=20 && N>=6)){
+//             System.out.println("Weird");
+//         } else {
+//             System.out.println("Not Weird");
+//         }
+        
+        
+//     }
+// }
 
 
 // ############################################

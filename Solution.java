@@ -1,26 +1,64 @@
 import java.util.*;
 import java.io.*;
-import java.lang.Math;
+
+
 
 class Solution{
-    public static void main(String []argh){
-        Scanner in = new Scanner(System.in);
-        int t=in.nextInt();
-        for(int i=0;i<t;i++){
-            int a = in.nextInt();
-            int b = in.nextInt();
-            int n = in.nextInt();
-            int acumulator = a;
-            for(int j=0;j<n;j++){
-                acumulator += (int) Math.pow(2,j)*b;
-                System.out.print(acumulator+" ");
+    public static void main(String []argh)
+    {
+
+
+
+        Scanner sc = new Scanner(System.in);
+        int t=sc.nextInt();
+
+        for(int i=0;i<t;i++)
+        {
+
+            try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in:");
+                if(x>=-128 && x<=127)System.out.println("* byte");
+                //Complete the code
             }
-            System.out.println();
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
         }
-        in.close();
-        
     }
 }
+
+
+
+
+// ##############################################################
+// Math and String manipulation
+// import java.util.*;
+// import java.io.*;
+// import java.lang.Math;
+
+// class Solution{
+//     public static void main(String []argh){
+//         Scanner in = new Scanner(System.in);
+//         int t=in.nextInt();
+//         for(int i=0;i<t;i++){
+//             int a = in.nextInt();
+//             int b = in.nextInt();
+//             int n = in.nextInt();
+//             int acumulator = a;
+//             for(int j=0;j<n;j++){
+//                 acumulator += (int) Math.pow(2,j)*b;
+//                 System.out.print(acumulator+" ");
+//             }
+//             System.out.println();
+//         }
+//         in.close();
+        
+//     }
+// }
 
 // #####################################################
 // Loops and Format output 

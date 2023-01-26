@@ -3,7 +3,7 @@
 import java.util.*;
 import java.text.*;
 
-public class Solution {
+public class IntroJavaSolution {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -83,7 +83,7 @@ public class Solution {
 
 // }
 
-// public class Solution {
+// public class IntroJavaSolution {
 //     public static void main(String[] args) throws IOException {
 //         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 //         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -112,7 +112,7 @@ public class Solution {
 
 // import java.util.*;
 // import java.security.*;
-// public class Solution {
+// public class IntroJavaSolution {
 //  public static void main(String[] args) {
 
 //   DoNotTerminate.forbidExit();
@@ -164,7 +164,7 @@ public class Solution {
 // import java.math.*;
 // import java.util.regex.*;
 
-// public class Solution {
+// public class IntroJavaSolution {
 
 // private static boolean flag; 
 // private static int B;
@@ -203,7 +203,7 @@ public class Solution {
 // import java.math.*;
 // import java.util.regex.*;
 
-// public class Solution {
+// public class IntroJavaSolution {
 
 //     public static void main(String[] args) {
 //         int line_counter = 0;
@@ -225,7 +225,7 @@ public class Solution {
 
 
 
-// class Solution{
+// class IntroJavaSolution{
 //     public static void main(String []argh)
 //     {
 
@@ -265,7 +265,7 @@ public class Solution {
 // import java.io.*;
 // import java.lang.Math;
 
-// class Solution{
+// class IntroJavaSolution{
 //     public static void main(String []argh){
 //         Scanner in = new Scanner(System.in);
 //         int t=in.nextInt();
@@ -295,7 +295,7 @@ public class Solution {
 // import java.util.*;
 // import java.util.concurrent.*;
 // import java.util.regex.*;
-// public class Solution {
+// public class IntroJavaSolution {
 //     public static void main(String[] args) throws IOException {
 //         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in)); // read input from STDIN
 
@@ -313,7 +313,7 @@ public class Solution {
 
 // import java.util.Scanner;
 
-// public class Solution {
+// public class IntroJavaSolution {
 
 //     public static void main(String[] args) {
 //             Scanner sc=new Scanner(System.in);
@@ -334,7 +334,7 @@ public class Solution {
 //
 // import java.util.Scanner;
 
-// public class Solution {
+// public class IntroJavaSolution {
 //     public static void main(String[] args) {
 //         Scanner scan = new Scanner(System.in);
 //         int i = scan.nextInt();
@@ -360,7 +360,7 @@ public class Solution {
 // import java.util.concurrent.*;
 // import java.util.regex.*;
 
-// public class Solution {
+// public class IntroJavaSolution {
 
 
 
@@ -387,7 +387,7 @@ public class Solution {
 // Scan input from STDIN. Print output to STDOUT
 // import java.util.*;
 
-// public class Solution {
+// public class IntroJavaSolution {
 
 //     public static void main(String[] args) {
 //         Scanner scan = new Scanner(System.in);

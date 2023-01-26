@@ -1,4 +1,35 @@
 // ################################################
+// Java Currency Formatter
+import java.util.*;
+import java.text.*;
+
+public class Solution {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double payment = scanner.nextDouble();
+        scanner.close();
+        
+        NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("en", "us"));
+    String us = nf.format(payment);
+
+    NumberFormat ch = NumberFormat.getCurrencyInstance(Locale.CHINA);
+    String china = ch.format(payment);
+
+    NumberFormat fr = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+    String france = fr.format(payment);
+
+    NumberFormat in = NumberFormat.getCurrencyInstance(new Locale("en", "in"));
+    String india = in.format(payment);
+        
+        System.out.println("US: " + us);
+        System.out.println("India: " + india);
+        System.out.println("China: " + china);
+        System.out.println("France: " + france);
+    }
+}
+
+// ################################################
 // Java 15 Date and Time
 //import
 // import java.time.LocalDate;

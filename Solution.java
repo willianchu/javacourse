@@ -5,75 +5,75 @@
 
 //code
 // LocalDate date = LocalDate.of(year, month, day);
-// return date.getDayOfWeek().toString();
+// return date.getDayOfWeek().toString(); // it returns the day of the week
 
 // ################################################
 // Java Date and Time
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+// import java.io.*;
+// import java.math.*;
+// import java.security.*;
+// import java.text.*;
+// import java.util.*;
+// import java.util.concurrent.*;
+// import java.util.regex.*;
 
-class Result {
+// class Result {
 
-    public static String findDay(int month, int day, int year) {
-        Calendar cal = Calendar.getInstance();
-        cal.set(year, month-1, day);
-        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-        String dayName = "";
-        switch(dayOfWeek){
-            case 1:
-                dayName = "SUNDAY";
-                break;
-            case 2:
-                dayName = "MONDAY";
-                break;
-            case 3:
-                dayName = "TUESDAY";
-                break;
-            case 4:
-                dayName = "WEDNESDAY";
-                break;
-            case 5:
-                dayName = "THURSDAY";
-                break;
-            case 6:
-                dayName = "FRIDAY";
-                break;
-            case 7:
-                dayName = "SATURDAY";
-                break;
-        }
-        return dayName;
-    }
+//     public static String findDay(int month, int day, int year) {
+//         Calendar cal = Calendar.getInstance();
+//         cal.set(year, month-1, day);
+//         int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+//         String dayName = "";
+//         switch(dayOfWeek){
+//             case 1:
+//                 dayName = "SUNDAY";
+//                 break;
+//             case 2:
+//                 dayName = "MONDAY";
+//                 break;
+//             case 3:
+//                 dayName = "TUESDAY";
+//                 break;
+//             case 4:
+//                 dayName = "WEDNESDAY";
+//                 break;
+//             case 5:
+//                 dayName = "THURSDAY";
+//                 break;
+//             case 6:
+//                 dayName = "FRIDAY";
+//                 break;
+//             case 7:
+//                 dayName = "SATURDAY";
+//                 break;
+//         }
+//         return dayName;
+//     }
 
-}
+// }
 
-public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+// public class Solution {
+//     public static void main(String[] args) throws IOException {
+//         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+//         String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
 
-        int month = Integer.parseInt(firstMultipleInput[0]);
+//         int month = Integer.parseInt(firstMultipleInput[0]);
 
-        int day = Integer.parseInt(firstMultipleInput[1]);
+//         int day = Integer.parseInt(firstMultipleInput[1]);
 
-        int year = Integer.parseInt(firstMultipleInput[2]);
+//         int year = Integer.parseInt(firstMultipleInput[2]);
 
-        String res = Result.findDay(month, day, year);
+//         String res = Result.findDay(month, day, year);
 
-        bufferedWriter.write(res);
-        bufferedWriter.newLine();
+//         bufferedWriter.write(res);
+//         bufferedWriter.newLine();
 
-        bufferedReader.close();
-        bufferedWriter.close();
-    }
-}
+//         bufferedReader.close();
+//         bufferedWriter.close();
+//     }
+// }
 
 
 // ################################################

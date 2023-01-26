@@ -1,51 +1,129 @@
 // ################################################
+// Java 15 Date and Time
+//import
+// import java.time.LocalDate;
+
+//code
+// LocalDate date = LocalDate.of(year, month, day);
+// return date.getDayOfWeek().toString();
+
+// ################################################
+// Java Date and Time
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+class Result {
+
+    public static String findDay(int month, int day, int year) {
+        Calendar cal = Calendar.getInstance();
+        cal.set(year, month-1, day);
+        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+        String dayName = "";
+        switch(dayOfWeek){
+            case 1:
+                dayName = "SUNDAY";
+                break;
+            case 2:
+                dayName = "MONDAY";
+                break;
+            case 3:
+                dayName = "TUESDAY";
+                break;
+            case 4:
+                dayName = "WEDNESDAY";
+                break;
+            case 5:
+                dayName = "THURSDAY";
+                break;
+            case 6:
+                dayName = "FRIDAY";
+                break;
+            case 7:
+                dayName = "SATURDAY";
+                break;
+        }
+        return dayName;
+    }
+
+}
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
+
+        int month = Integer.parseInt(firstMultipleInput[0]);
+
+        int day = Integer.parseInt(firstMultipleInput[1]);
+
+        int year = Integer.parseInt(firstMultipleInput[2]);
+
+        String res = Result.findDay(month, day, year);
+
+        bufferedWriter.write(res);
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+
+
+// ################################################
 // Java Int to String
 
-import java.util.*;
-import java.security.*;
-public class Solution {
- public static void main(String[] args) {
+// import java.util.*;
+// import java.security.*;
+// public class Solution {
+//  public static void main(String[] args) {
 
-  DoNotTerminate.forbidExit();
+//   DoNotTerminate.forbidExit();
 
-  try {
-   Scanner in = new Scanner(System.in);
-   int n = in .nextInt();
-   in.close();
+//   try {
+//    Scanner in = new Scanner(System.in);
+//    int n = in .nextInt();
+//    in.close();
    
-   String s = String.valueOf(n);
+//    String s = String.valueOf(n);
     
-   if (n == Integer.parseInt(s)) {
-    System.out.println("Good job");
-   } else {
-    System.out.println("Wrong answer.");
-   }
-  } catch (DoNotTerminate.ExitTrappedException e) {
-   System.out.println("Unsuccessful Termination!!");
-  }
- }
-}
+//    if (n == Integer.parseInt(s)) {
+//     System.out.println("Good job");
+//    } else {
+//     System.out.println("Wrong answer.");
+//    }
+//   } catch (DoNotTerminate.ExitTrappedException e) {
+//    System.out.println("Unsuccessful Termination!!");
+//   }
+//  }
+// }
 
-//The following class will prevent you from terminating the code using exit(0)!
-class DoNotTerminate {
+// //The following class will prevent you from terminating the code using exit(0)!
+// class DoNotTerminate {
 
- public static class ExitTrappedException extends SecurityException {
+//  public static class ExitTrappedException extends SecurityException {
 
-  private static final long serialVersionUID = 1;
- }
+//   private static final long serialVersionUID = 1;
+//  }
 
- public static void forbidExit() {
-  final SecurityManager securityManager = new SecurityManager() {
-   @Override
-   public void checkPermission(Permission permission) {
-    if (permission.getName().contains("exitVM")) {
-     throw new ExitTrappedException();
-    }
-   }
-  };
-  System.setSecurityManager(securityManager);
- }
-}
+//  public static void forbidExit() {
+//   final SecurityManager securityManager = new SecurityManager() {
+//    @Override
+//    public void checkPermission(Permission permission) {
+//     if (permission.getName().contains("exitVM")) {
+//      throw new ExitTrappedException();
+//     }
+//    }
+//   };
+//   System.setSecurityManager(securityManager);
+//  }
+// }
 
 // ################################################
 // Java Static Initializer Block

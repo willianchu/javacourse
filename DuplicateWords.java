@@ -10,6 +10,10 @@ public class DuplicateWords {
         // \\b matches a word boundary
         // \\w+ matches one or more word characters
         // (\\b\\W+\\b\\1\\b)* matches zero or more repetitions of the following group:
+        // \\b matches a word boundary (a word boundary is a position between a word character and a non-word character, or vice versa)
+        // \\W+ matches one or more non-word characters
+        // \\b matches a word boundary
+        // \\1 matches the same text as most recently matched by the 1st capturing group
 
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
         // Pattern.CASE_INSENSITIVE makes the regex case insensitive

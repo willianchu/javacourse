@@ -18,7 +18,7 @@ class WorkBigDecimal{
             {
                 BigDecimal a = new BigDecimal(s[i]);
                 BigDecimal b = new BigDecimal(s[j]);
-                System.out.println(a.compareTo(b), a, b);
+                System.out.printf("%d %s %s", a.compareTo(b), a, b);
                 if(a.compareTo(b) < 0)
                 {
                     String temp = s[i];

@@ -11,15 +11,13 @@ class WorkBigDecimal{
             s[i]=sc.next();
         }
       	sc.close();
-
-        Arrays.sort(s, 0, n, Collections.reverseOrder(new Comparator<String>() {
+            // Javonical way to instantiate a comparator
+          Arrays.sort(s, 0, n, new Comparator<String>() {
             @Override
-            public int compare(String a1, String a2) {
-                BigDecimal a = new BigDecimal(a1);
-                BigDecimal b = new BigDecimal(a2);
-                return a.compareTo(b);
+            public int compare(String s1, String s2) {
+                return new BigDecimal(s2).compareTo(new BigDecimal(s1));
             }
-        }));
+          });
 
         for(int i=0;i<n;i++)
         {
@@ -28,3 +26,13 @@ class WorkBigDecimal{
     }
 
 }
+
+
+// Arrays.sort(s, 0, n, Collections.reverseOrder(new Comparator<String>() { 
+//     @Override 
+//     public int compare(String a1, String a2) {
+//         BigDecimal a = new BigDecimal(a1);
+//         BigDecimal b = new BigDecimal(a2);
+//         return a.compareTo(b);
+//     }
+// }));

@@ -12,21 +12,14 @@ class WorkBigDecimal{
         }
       	sc.close();
 
-        for(int i=0;i<n;i++)
-        {
-            for(int j=i+1;j<n;j++)
-            {
-                BigDecimal a = new BigDecimal(s[i]);
-                BigDecimal b = new BigDecimal(s[j]);
-                System.out.printf("%d %s %s", a.compareTo(b), a, b);
-                if(a.compareTo(b) < 0)
-                {
-                    String temp = s[i];
-                    s[i] = s[j];
-                    s[j] = temp;
-                }
+        Arrays.sort(s, 0, n, Collections.reverseOrder(new Comparator<String>() {
+            @Override
+            public int compare(String a1, String a2) {
+                BigDecimal a = new BigDecimal(a1);
+                BigDecimal b = new BigDecimal(a2);
+                return a.compareTo(b);
             }
-        }
+        }));
 
         for(int i=0;i<n;i++)
         {

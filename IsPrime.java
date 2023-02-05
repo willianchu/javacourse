@@ -6,9 +6,9 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class IsPrime {
 
-    public static boolean isPrime(String n) {
+    public static boolean IsPrim(String n) {
         BigInteger bigInteger = new BigInteger(n);
         Boolean flag = true;
         for(int i = 2; i < bigInteger.intValue(); i++) {
@@ -25,7 +25,7 @@ public class Solution {
 
       String n = bufferedReader.readLine();
 
-      System.out.println(isPrime(n) ? "prime" : "not prime");
+      System.out.println(IsPrim(n) ? "prime" : "not prime");
 
       bufferedReader.close();
   }

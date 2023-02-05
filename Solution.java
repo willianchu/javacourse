@@ -1,37 +1,25 @@
 import java.io.*;
-import java.util.*;
-import java.text.*;
 import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution{
-	public static void main(String[] args){
-		
-		Scanner in = new Scanner(System.in);
-		int testCases = Integer.parseInt(in.nextLine());
-		while(testCases>0){
-			String line = in.nextLine();
-			
-          	//html tag extractor
-						boolean matchFound = false;
-						Matcher m = Pattern.compile("<(.+)>([^<]+)</\\1>").matcher(line);
-						// <(.+)> matches the opening tag, ([^<]+) matches the content, and </\\1> matches the closing tag. The \\1 in the closing tag matches whatever was matched in the opening tag.
-						
-						while (m.find()) { 
-							System.out.println(m.group(2)); // group(2) is the content
-							// while group(1) is the tag
-							// and group(0) is the whole thing
-							matchFound = true;
-						}
-						if (!matchFound) {
-							System.out.println("None");
-						}
+public class IsPrime
 
-			
-			testCases--;
-		}
-	}
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        String n = bufferedReader.readLine();
+
+        bufferedReader.close();
+
+        BigInteger bigInteger = new BigInteger(n);
+        System.out.println(bigInteger.isProbablePrime(1) ? "prime" : "not prime");
+        // Uses the Miller-Rabin primality test, which is an algorithm for testing the primality of a number.
+        // We call the function by .isProbablePrime(1) and pass the number of rounds as the parameter.
+
+    }
 }
-
-
-

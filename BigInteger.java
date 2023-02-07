@@ -12,12 +12,12 @@ public class BigInteger {
         BigInteger a = sc.nextBigInteger();
         BigInteger b = sc.nextBigInteger();
         // adding the two args
-        BigInteger c = a.add(b);
+        BigInteger ResultSum = a.add(b);
         // multiplying the two args
-        BigInteger d = a.multiply(b);
+        BigInteger ResultMultiply = a.multiply(b);
         // printing the results
-        System.out.println(c);
-        System.out.println(d);
+        System.out.println(ResultSum);
+        System.out.println(ResultMultiply);
         // closing the scanner
         sc.close();
     }

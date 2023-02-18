@@ -15,21 +15,12 @@ public class SubArray {
             a[i] = val;
         }
         elementsNumber.close();
-        // creating sub arrays
-        int[][] subArrays = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                subArrays[i][j] = a[j];
-            }
-        }
-        // sum of sub arrays
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                sum += subArrays[i][j];
-                if (sum < 0) {
-                    System.out.println(sum);
-                }
+        // Prints each sequential element in array a
+        int count = 0;
+        for (int i = 0; i < a.length; i++) {
+            int sum = 0;
+            for (int j = i; j < a.length; j++) {
+                System.out.println("i: " + i + " j: " + j);
             }
         }
     }

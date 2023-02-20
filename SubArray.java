@@ -7,23 +7,24 @@ import java.util.regex.*;
 public class SubArray {
 
     public static void main(String[] args) {
-        Scanner elementsNumber = new Scanner(System.in);
-        int n = elementsNumber.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            int val = elementsNumber.nextInt();
-            a[i] = val;
+
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        for(int arr_i=0; arr_i < n; arr_i++){
+            arr[arr_i] = in.nextInt();
         }
-        elementsNumber.close();
-        
-        for(int i = 1; i <= n; i++){
-            for(int j = 0; j < n; j++){
-                for(int k = j; k < j + i; k++){
-                    if(k < n){
-                        System.out.print(a[k] + " ");
-                    }
+
+        int count = 0;
+        for(int i = 0; i < n; i++){
+            int sum = 0;
+            for(int j = i; j < n; j++){
+                sum += arr[j];
+                if(sum < 0){
+                    count++;
                 }
             }
         }
+        System.out.println(count);
     }
 }

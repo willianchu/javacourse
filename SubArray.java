@@ -29,5 +29,15 @@ public class SubArray {
             }
         }
         System.out.println(count);
+        // print the array with all sub arrays combinations
+        // for(int i = 0; i < n; i++){
+        //     for(int j = i; j < n; j++){
+        //         for(int k = i; k <= j; k++){
+        //             System.out.print(arr[k] + " ");
+        //         }
+        //         System.out.println();
+        //     }
+        // }
+
     }
 }

@@ -15,12 +15,14 @@ public class SubArray {
             a[i] = val;
         }
         elementsNumber.close();
-        // Prints each sequential element in array a
-        int count = 0;
-        for (int i = 0; i < a.length; i++) {
-            int sum = 0;
-            for (int j = i; j < a.length; j++) {
-                System.out.println("i: " + i + " j: " + j);
+        
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j < n; j++){
+                for(int k = j; k < j + i; k++){
+                    if(k < n){
+                        System.out.print(a[k] + " ");
+                    }
+                }
             }
         }
     }

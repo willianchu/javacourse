@@ -22,6 +22,17 @@ public class Arraylist {
             }
             array.add(arrayLine);
         }
+        int queries = scan.nextInt();
+        for (int i = 0; i < queries; i++) {
+            int line = scan.nextInt();
+            int element = scan.nextInt();
+            try {
+                System.out.println(array.get(line - 1).get(element - 1));
+            } catch (Exception e) {
+                System.out.println("ERROR!");
+            }
+        }
+        scan.close();
     }
 }
 
